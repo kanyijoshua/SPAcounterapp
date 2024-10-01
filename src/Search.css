@@ -1,0 +1,35 @@
+.search-container.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-container.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.search-input {
+  /* General styles for input */
+}
+
+.search-item {
+  /* General styles for search items */
+}
+
+.search-item.light {
+  background-color: #ffffff; /* Light background for light theme */
+}
+
+.search-item.dark {
+  background-color: #444444; /* Dark background for dark theme */
+}
+
+/* Other styles unchanged */
