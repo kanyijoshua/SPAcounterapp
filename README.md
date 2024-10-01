@@ -14,8 +14,18 @@ This is a React-based single-page application that demonstrates various features
 2. Run `npm install` to install dependencies.
 3. Run `npm start` to start the development server.
 
+## Building for Production:
+To create a production build, run:
+`npm run build`
+
+## Testing:
+Run the test suite with:
+`npm test`
+
 ## CI/CD:
 - This project uses GitHub Actions for CI/CD. See the .github/workflows/main.yml file for details on the pipeline configuration.
+
+
 
 # License:
 This project is licensed under the MIT License - see the LICENSE.md file for details.
