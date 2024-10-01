@@ -32,16 +32,23 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <Counter updateCounts={updateCounts} />
-      <ThemeToggler theme={theme} toggleTheme={toggleTheme} />
-      <button onClick={() => setShowSearch(!showSearch)}>
-        {showSearch ? 'Hide Search' : 'Show Search'}
-      </button>
-      {showSearch && (
-        <Suspense fallback={<div>Loading Search...</div>}>
-          <DebouncedSearch counts={counts} />
-        </Suspense>
-      )}
+      <header className="App-header">
+        <h1>Counter App</h1>
+        <div className="header-controls">
+          <ThemeToggler theme={theme} toggleTheme={toggleTheme} />
+          <button onClick={() => setShowSearch(!showSearch)}>
+            {showSearch ? 'Hide Search' : 'Show Search'}
+          </button>
+        </div>
+      </header>
+      <main>
+        <Counter updateCounts={updateCounts} />
+        {showSearch && (
+          <Suspense fallback={<div>Loading Search...</div>}>
+            <DebouncedSearch counts={counts} />
+          </Suspense>
+        )}
+      </main>
     </div>
   );
 }
